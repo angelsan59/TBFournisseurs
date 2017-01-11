@@ -1,7 +1,31 @@
-h1{
-    color:#ccc;
-}
-
 body{
     font-family:arial;
+    height:100%;
+    display: block;
+    
+}
+
+.jumbotron{
+	padding-left:50px;
+	background-color: #e8e1d6;
+
+}
+
+h1{margin-left:50px;
+margin-right:auto;
+font-family: 'Alfa Slab One', cursive;
+}
+
+.logo{
+	
+	 border-radius: 50%;
+	 /*border: 1px solid #ddd;*/
+	 padding: 1px;
+	 background-color:#ccc;
+	 box-shadow:2px 2px 5px #7eb2ba;
+	 margin-right:20px;
+}
+
+.btn-primary{
+    font-size:1.5em;
 }

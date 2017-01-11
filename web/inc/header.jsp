@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="css/bootstrap.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="inc/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 <link rel="SHORTCUT ICON" href="favicon.ico">
