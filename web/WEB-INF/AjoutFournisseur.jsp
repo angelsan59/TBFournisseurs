@@ -16,15 +16,15 @@
         <c:import url="/inc/header.jsp" />
         
         <div>
-            <form method="post" action="<c:url value="/CreationClientServlet"/>">
+            <form method="post" action="<c:url value="/"/>">
                 <fieldset>
-                    <legend>Informations client</legend>
+                    <legend>Informations Fournisseur</legend>
     
                    <c:import url="/inc/fournisseurform.jsp" />
                 </fieldset>
                 <p class="info">${ form.resultat }</p>
-                <input type="submit" value="Valider"  />
-                <input type="reset" value="Remettre à zéro" /> <br />
+                <input type="submit" class="btn btn-info" value="Valider"  />
+                <input type="reset" class="btn btn-info" value="Remettre à zéro" /> <br />
             </form>
         </div>
                 

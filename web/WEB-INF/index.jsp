@@ -21,14 +21,14 @@
         <div class="row">
             <div class="col-sm-6 text-center">
                 <div class="btn-group-vertical">
-  <a href="" role="button" class="btn btn-primary">Ajouter un fournisseur</a>
-  <a href="" role="button" class="btn btn-primary">Voir la liste</a>
+  <a href="AjoutFournisseur" role="button" class="btn btn-primary btn-lg">Ajouter un fournisseur</a>
+  <a href="newjsp" role="button" class="btn btn-primary btn-lg">Voir la liste</a>
                 </div>
             </div>
             <div class="col-sm-6 text-center">
                 <div class="btn-group-vertical">
-  <a href="" role="button" class="btn btn-primary">Ajouter une commande</a>
-  <a href="" role="button" class="btn btn-primary">Liste des comandes</a>
+  <a href="" role="button" class="btn btn-primary btn-lg">Ajouter une commande</a>
+  <a href="" role="button" class="btn btn-primary btn-lg">Liste des comandes</a>
                 </div>
             </div>
         </div> 
