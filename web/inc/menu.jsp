@@ -5,13 +5,13 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">ToutBois</a>
+      <a class="navbar-brand" href="/ToutBoisFournisseurs">ToutBois</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="index.php">Accueil <span class="sr-only">(current)</span></a></li>
-		<li><a href="commandes_encours.php">Gestion Fournisseurs</a></li>
-		<li><a href="panier.php">Gestion Commandes</a></li>
+        <li class="active"><a href="/ToutBoisFournisseurs">Accueil <span class="sr-only">(current)</span></a></li>
+		<li><a href="GestionFournisseur.jsp">Gestion Fournisseurs</a></li>
+		<li><a href="GestionCommandes.jsp">Gestion Commandes</a></li>
 		
       </ul>
       <form class="navbar-form navbar-left">

@@ -3,6 +3,7 @@ body{
     height:100%;
     display: block;
     
+    
 }
 
 .jumbotron{
@@ -24,4 +25,61 @@ font-family: 'Alfa Slab One', cursive;
 	 background-color:#ccc;
 	 box-shadow:2px 2px 5px #7eb2ba;
 	 margin-right:20px;
+}
+
+p{padding-left:50px;}
+
+/* Forms --------------------------------------------------------------------------------------- */
+fieldset {
+    padding: 10px;
+    border: 1px #0568CD solid;
+    margin: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0568CD;
+}
+
+form label {
+    float: left;
+    width: 200px;
+    margin: 3px 0px 0px 0px;
+}
+
+form input {
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}
+
+form input.sansLabel {
+    margin-left: 200px;
+}
+
+/* Styles et couleurs -------------------------------------------------------------------------- */
+.requis {
+    color: #c00;
+}
+
+.erreur {
+    color: #900;
+}
+
+.succes {
+    color: #090;
+}
+
+.info {
+    font-style: italic;
+    color: #E8A22B;
+}
+
+/* Blocs constituants -------------------------------------------------------------------------- */
+div#menu{
+	border: 1px solid #0568CD;
+	padding: 10px;
+	margin: 10px;
+}
+div#corps{
+	margin: 10px;
 }
