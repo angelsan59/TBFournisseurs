@@ -14,8 +14,6 @@ public class Produit {
     private String designation;
     private String image;
     private double pu;
-    private double remise;
-    private int qte_stock;
     private Fournisseur fournisseur;
 
     public int getCode_prod() {
@@ -48,22 +46,6 @@ public class Produit {
 
     public void setPu(double pu) {
         this.pu = pu;
-    }
-
-    public double getRemise() {
-        return remise;
-    }
-
-    public void setRemise(double remise) {
-        this.remise = remise;
-    }
-
-    public int getQte_stock() {
-        return qte_stock;
-    }
-
-    public void setQte_stock(int qte_stock) {
-        this.qte_stock = qte_stock;
     }
 
     public Fournisseur getFournisseur() {

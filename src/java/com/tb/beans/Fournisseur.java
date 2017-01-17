@@ -14,7 +14,7 @@ public class Fournisseur {
     private String enseigne;
     private int siret;
     private String adresse;
-    private int cp;
+    private String cp;
     private String ville;
     private String pays;
     private String email;
@@ -55,11 +55,11 @@ public class Fournisseur {
         this.adresse = adresse;
     }
 
-    public int getCp() {
+    public String getCp() {
         return cp;
     }
 
-    public void setCp(int cp) {
+    public void setCp(String cp) {
         this.cp = cp;
     }
 

@@ -256,20 +256,6 @@
                 </textPath>
             </text>
 
-        </g></Content></Page><Page><Properties><Property name="name">formulaire fournisseur</Property><Property name="id">1484054154186_4976</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="6659d5222df5418880bc1da417771286" transform="matrix(1,0,0,1,59,45)"><p:metadata><p:property name="box"><![CDATA[1103,697]]></p:property><p:property name="imageData"><![CDATA[1103,697,../../Downloads/test_Page_1.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
-            <defs>
-                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="580a6b914b9642ea9158ec75eea34aab">
-                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
-                </filter>
-                <g p:name="container" id="85b84f5d02f64d22a0eb99449dd412ea">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="9b5f6f4c8c1b4ae6b511f4d31ce130da" width="1103" height="697" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="e93e7fdbc41b45e0b2996123a191a3bb" transform="scale(1,1)">
-                        <image x="0" y="0" p:name="image" id="984b8fcc60574b31972a4976a3735392" xlink:href="../../Downloads/test_Page_1.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1103" height="697"/>
-                    </g>
-                </g>
-            </defs>
-            <use xlink:href="#85b84f5d02f64d22a0eb99449dd412ea" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#580a6b914b9642ea9158ec75eea34aab)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="19b3edba9afa4c068c1ad600ec969397"/>
-            <use xlink:href="#85b84f5d02f64d22a0eb99449dd412ea" xmlns:xlink="http://www.w3.org/1999/xlink"/>
         </g></Content></Page><Page><Properties><Property name="name">organisation appli fournisseurs</Property><Property name="id">1484056396395_4786</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:RoundedRect" id="90a598ed560f432194fdbee035bd3d83" transform="matrix(1,0,0,1,223,646)"><p:metadata><p:property name="box"><![CDATA[588,139]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="radius"><![CDATA[0,0]]></p:property><p:property name="textPadding"><![CDATA[0,17.375]]></p:property><p:property name="fillColor"><![CDATA[#4388CC36]]></p:property><p:property name="strokeColor"><![CDATA[#1B3280FF]]></p:property><p:property name="strokeStyle"><![CDATA[2|]]></p:property><p:property name="textContent"><![CDATA[
                 ]]></p:property><p:property name="textFont"><![CDATA["Liberation Sans",Arial,sans-serif|normal|normal|13px|none]]></p:property><p:property name="textColor"><![CDATA[#000000FF]]></p:property><p:property name="textAlign"><![CDATA[1,1]]></p:property></p:metadata>
 
@@ -678,4 +664,88 @@
                 </textPath>
             </text>
 
+        </g></Content></Page><Page><Properties><Property name="name">page accueil</Property><Property name="id">1484658006642_2994</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property><Property name="background">transparent</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="242551cbc1394d1d842e4e65d315f235" transform="matrix(1,0,0,1,49,59)"><p:metadata><p:property name="box"><![CDATA[1096,712]]></p:property><p:property name="imageData"><![CDATA[1096,712,ToutBoisFournisseurs_Page_1.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="4a95804325124e1a888e343ec4f1d40c">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="dfcd30047a4f4caa8df338fde69dbc16">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="2e8294bd2de44b159863da1cab240187" width="1096" height="712" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="b652853202f44484b9f30826b05e3cd9" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="feea4c79d7d64fc395042ca4a1351f3b" xlink:href="ToutBoisFournisseurs_Page_1.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="712"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#dfcd30047a4f4caa8df338fde69dbc16" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#4a95804325124e1a888e343ec4f1d40c)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="b13592e40aa34376ab902b01f4a2ec46"/>
+            <use xlink:href="#dfcd30047a4f4caa8df338fde69dbc16" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g></Content></Page><Page><Properties><Property name="name">formulaire fournisseur</Property><Property name="id">1484054154186_4976</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="6659d5222df5418880bc1da417771286" transform="matrix(1,0,0,1,59,45)"><p:metadata><p:property name="box"><![CDATA[1103,697]]></p:property><p:property name="imageData"><![CDATA[1103,697,../../Downloads/test_Page_1.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="580a6b914b9642ea9158ec75eea34aab">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="85b84f5d02f64d22a0eb99449dd412ea">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="9b5f6f4c8c1b4ae6b511f4d31ce130da" width="1103" height="697" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="e93e7fdbc41b45e0b2996123a191a3bb" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="984b8fcc60574b31972a4976a3735392" xlink:href="../../Downloads/test_Page_1.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1103" height="697"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#85b84f5d02f64d22a0eb99449dd412ea" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#580a6b914b9642ea9158ec75eea34aab)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="19b3edba9afa4c068c1ad600ec969397"/>
+            <use xlink:href="#85b84f5d02f64d22a0eb99449dd412ea" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="f4c7c53127ac42caa0721c3572183e12" transform="matrix(1,0,0,1,50,20)"><p:metadata><p:property name="box"><![CDATA[1103,697]]></p:property><p:property name="imageData"><![CDATA[1103,697,ToutBoisFournisseurs_Page_2.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="803cb7ef6b9d4b038427e8045d44a16f">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="c8abbda179f147d5a64d05e60b5de6aa">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="fc7f50eeef004e6c9e6c412f1ef91022" width="1103" height="697" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="3a92056e07bc4a79a3399df545b4d668" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="b754820d2742426181435eed5abd8aac" xlink:href="ToutBoisFournisseurs_Page_2.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1103" height="697"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#c8abbda179f147d5a64d05e60b5de6aa" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#803cb7ef6b9d4b038427e8045d44a16f)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="924e697c522a4ed1a5baa567cce860eb"/>
+            <use xlink:href="#c8abbda179f147d5a64d05e60b5de6aa" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g></Content></Page><Page><Properties><Property name="name">liste fournisseurs</Property><Property name="id">1484658117079_5021</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property><Property name="background">transparent</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="9cb9a32bf5dc4f25b1b1d82d65dd05c7" transform="matrix(1,0,0,1,65,31)"><p:metadata><p:property name="box"><![CDATA[1096,792]]></p:property><p:property name="imageData"><![CDATA[1096,792,ToutBoisFournisseurs_Page_4.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="075446465c904176b79fc356809445cf">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="0f08214a597f4fe3b3fa94a47ca19f14">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="98de1c30976c49e7b9e59bd33855f928" width="1096" height="792" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="ac2f8adf2961491da275f635d612fcbe" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="c6b4be71b6864765809ec1a0654514a3" xlink:href="ToutBoisFournisseurs_Page_4.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="792"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#0f08214a597f4fe3b3fa94a47ca19f14" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#075446465c904176b79fc356809445cf)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="1d6cc1114eb241f290a5b00eddd850c1"/>
+            <use xlink:href="#0f08214a597f4fe3b3fa94a47ca19f14" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g></Content></Page><Page><Properties><Property name="name">formulaire commande</Property><Property name="id">1484658095930_4595</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property><Property name="background">transparent</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="15f6c54a31834f59a6a59220a23a2b55" transform="matrix(1,0,0,1,102,71)"><p:metadata><p:property name="box"><![CDATA[1096,712]]></p:property><p:property name="imageData"><![CDATA[1096,712,ToutBoisFournisseurs_Page_5.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="cb79d0fc3dc9432285683cbc0806536b">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="b2644c2f91174b4c9969ccef9319c16a">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="5ef395af503149bbba46a1649e161195" width="1096" height="712" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="bcd191f2684a488da3487a94f60d9c10" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="587e990d0af84383a3b26b0d354aba50" xlink:href="ToutBoisFournisseurs_Page_5.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="712"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#b2644c2f91174b4c9969ccef9319c16a" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#cb79d0fc3dc9432285683cbc0806536b)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="ace7840354364ef384b288dc9b739edd"/>
+            <use xlink:href="#b2644c2f91174b4c9969ccef9319c16a" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g></Content></Page><Page><Properties><Property name="name">formulaire commande 2 ajout produits</Property><Property name="id">1484658139043_8892</Property><Property name="width">1291</Property><Property name="height">857</Property><Property name="dimBackground"/><Property name="transparentBackground">true</Property><Property name="backgroundColor">#FFFFFFFF</Property><Property name="background">transparent</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="f3d4fa647fdd4eaaac8b6598d34e6304" transform="matrix(1,0,0,1,45,23)"><p:metadata><p:property name="box"><![CDATA[1096,712]]></p:property><p:property name="imageData"><![CDATA[1096,712,ToutBoisFournisseurs_Page_6.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="fa7f9162de414a69a20602b20aaebedf">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="6ae38522183b4726bf5fc37821894e43">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="14f2cd29333046458ed7e5751e5b5d98" width="1096" height="712" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="9e9cab9b4fe448769abf2c1f8a377ec7" transform="scale(1,1)">
+                        <image x="0" y="0" p:name="image" id="385e432009c44037996bdba2239f434d" xlink:href="ToutBoisFournisseurs_Page_6.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="712"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#6ae38522183b4726bf5fc37821894e43" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#fa7f9162de414a69a20602b20aaebedf)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="1e68fdd5f3eb4e6a9200256ff36b1264"/>
+            <use xlink:href="#6ae38522183b4726bf5fc37821894e43" xmlns:xlink="http://www.w3.org/1999/xlink"/>
         </g></Content></Page></Pages></Document>
