@@ -5,29 +5,31 @@
  */
 package com.tb.beans;
 
+import java.io.Serializable;
+
 /**
  *
  * @author sociepka
  */
-public class Fournisseur {
-    private int code_fou;
+public class Fournisseur implements Serializable {
+    private Long code_fou;
     private String enseigne;
-    private int siret;
+    private String siret;
     private String adresse;
     private String cp;
     private String ville;
     private String pays;
     private String email;
-    private int telephone;
+    private String telephone;
 
     public Fournisseur() {
     }
 
-    public int getCode_fou() {
+    public Long getCode_fou() {
         return code_fou;
     }
 
-    public void setCode_fou(int code_fou) {
+    public void setCode_fou(Long code_fou) {
         this.code_fou = code_fou;
     }
 
@@ -39,11 +41,11 @@ public class Fournisseur {
         this.enseigne = enseigne;
     }
 
-    public int getSiret() {
+    public String getSiret() {
         return siret;
     }
 
-    public void setSiret(int siret) {
+    public void setSiret(String siret) {
         this.siret = siret;
     }
 
@@ -87,11 +89,11 @@ public class Fournisseur {
         this.email = email;
     }
 
-    public int getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
     
