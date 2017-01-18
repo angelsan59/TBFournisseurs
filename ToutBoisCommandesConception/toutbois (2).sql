@@ -75,22 +75,6 @@ CREATE TABLE `ligne_commande` (
   `code_prod` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Contenu de la table `ligne_commande`
---
-
-INSERT INTO `ligne_commande` (`qte`, `id_com`, `code_prod`) VALUES
-(1, 2, 25),
-(5, 2, 34),
-(1, 3, 37),
-(1, 3, 38),
-(5, 4, 34),
-(1, 4, 38),
-(1, 5, 37),
-(1, 6, 38),
-(1, 7, 38);
-
--- --------------------------------------------------------
 
 --
 -- Structure de la table `produit`
@@ -201,7 +185,7 @@ ALTER TABLE `produit`
 --
 ALTER TABLE `ligne_commande`
   ADD CONSTRAINT `FK_contenir_code_prod` FOREIGN KEY (`code_prod`) REFERENCES `produit` (`code_prod`),
-  ADD CONSTRAINT `FK_contenir_id_com` FOREIGN KEY (`id_com`) REFERENCES `entete_commande` (`id_com`);
+  ADD CONSTRAINT `FK_contenir_id_com` FOREIGN KEY (`id_com`) REFERENCES `commande` (`id_com`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
