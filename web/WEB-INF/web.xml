@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    <!-- <filter>
-        <filter-name>struts2</filter-name>
-        <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+    <filter>
+        <filter-name>PrechargementFilter</filter-name>
+        <filter-class>com.tb.filters.PrechargementFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>struts2</filter-name>
+        <filter-name>PrechargementFilter</filter-name>
         <url-pattern>/*</url-pattern>
-    </filter-mapping> -->
+    </filter-mapping>
     <listener>
         <listener-class>com.tb.config.InitialisationDAOFactory</listener-class>
     </listener>
-    <servlet>
-        <servlet-name>GestionJDBC</servlet-name>
-        <servlet-class>com.tb.servlets.GestionJDBC</servlet-class>
-    </servlet>
     <servlet>
         <servlet-name>CreationFournisseur</servlet-name>
         <servlet-class>com.tb.servlets.CreationFournisseur</servlet-class>
@@ -23,10 +19,10 @@
         <servlet-name>SuppressionFournisseur</servlet-name>
         <servlet-class>com.tb.servlets.SuppressionFournisseur</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>GestionJDBC</servlet-name>
-        <url-pattern>/GestionJDBC</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListeFournisseurs</servlet-name>
+        <servlet-class>com.tb.servlets.ListeFournisseurs</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CreationFournisseur</servlet-name>
         <url-pattern>/CreationFournisseur</url-pattern>
@@ -35,10 +31,12 @@
         <servlet-name>SuppressionFournisseur</servlet-name>
         <url-pattern>/SuppressionFournisseur</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListeFournisseurs</servlet-name>
+        <url-pattern>/ListeFournisseurs</url-pattern>
+    </servlet-mapping>
     <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
+        <session-timeout>30</session-timeout>
     </session-config>
     <welcome-file-list>
         <welcome-file>/WEB-INF/index.jsp</welcome-file>

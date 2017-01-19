@@ -27,7 +27,7 @@ import javax.servlet.http.Part;
  */
 
 
-public final class CreationFournisseurForm {
+public final class ModificationFournisseurForm {
     private static final String CHAMP_ENSEIGNE  = "enseigne";
     private static final String CHAMP_SIRET     = "siret";
     private static final String CHAMP_ADRESSE   = "adresse";
@@ -42,7 +42,7 @@ public final class CreationFournisseurForm {
     private Map<String, String> erreurs         = new HashMap<String, String>();
     private FournisseurDAO           fournisseurDAO;
 
-    public CreationFournisseurForm( FournisseurDAO fournisseurDAO ) {
+    public ModificationFournisseurForm( FournisseurDAO fournisseurDAO ) {
         this.fournisseurDAO = fournisseurDAO;
     }
 

@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Tout Bois - Gestion Commandes fournisseurs</title>
+        <title>Tout Bois - Gestion des fournisseurs</title>
     </head>
     <body>
          <c:import url="/inc/header.jsp" />
@@ -20,16 +20,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <div class="btn-group-vertical">
-  <a href="AjoutFournisseur.jsp" role="button" class="btn btn-primary btn-lg">Ajouter un fournisseur</a>
-  <a href="GestionFournisseur.jsp" role="button" class="btn btn-primary btn-lg">Voir la liste</a>
-                </div>
+                
+  <a href="CreationFournisseur" role="button" class="btn btn-primary btn-lg">Ajouter un fournisseur</a>
+
             </div>
             <div class="col-sm-6 text-center">
-                <div class="btn-group-vertical">
-  <a href="AjoutCommande.jsp" role="button" class="btn btn-primary btn-lg">Ajouter une commande</a>
-  <a href="GestionCommandes.jsp" role="button" class="btn btn-primary btn-lg">Liste des comandes</a>
-                </div>
+                
+  <a href="ListeFournisseurs" role="button" class="btn btn-primary btn-lg">Liste des fournisseurs</a>
+                
             </div>
         </div> 
     </div>

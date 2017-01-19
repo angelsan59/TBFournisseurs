@@ -29,11 +29,14 @@ font-family: 'Alfa Slab One', cursive;
 
 p{padding-left:50px;}
 
+
 /* Forms --------------------------------------------------------------------------------------- */
+
 fieldset {
     padding: 10px;
     border: 1px #0568CD solid;
-    margin: 10px;
+     border-radius: 5px;
+    
 }
 
 legend {
@@ -72,6 +75,7 @@ form input.sansLabel {
 .info {
     font-style: italic;
     color: #E8A22B;
+    text-align:center;
 }
 
 /* Blocs constituants -------------------------------------------------------------------------- */

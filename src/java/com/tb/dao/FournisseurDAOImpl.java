@@ -48,6 +48,12 @@ public class FournisseurDAOImpl implements FournisseurDAO {
         this.daoFactory = daoFactory;
     }
 
+    // Méthode pour trouver un fournisseur par code_fou 
+    @Override
+    public Fournisseur trouver( long code_fou ) throws DAOException {
+        return trouver( SQL_SELECT_PAR_CODE_FOU, code_fou );
+    }
+    
     // Méthode pour ajouter un fournisseur
      @Override
     public void creer( Fournisseur fournisseur ) throws DAOException {
@@ -82,11 +88,37 @@ public class FournisseurDAOImpl implements FournisseurDAO {
     }
     }
     
-     // Méthode pour trouver un fournisseur par code_fou
-    @Override
-    public Fournisseur trouver( long code_fou ) throws DAOException {
-        return trouver( SQL_SELECT_PAR_CODE_FOU, code_fou );
+    /*
+     * Méthode générique utilisée pour retourner un fournisseur depuis la base de
+     * données, correspondant à la requête SQL donnée prenant en paramètres les
+     * objets passés en argument.
+     */
+    private Fournisseur trouver( String sql, Object... objets ) throws DAOException {
+        Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        Fournisseur fournisseur = null;
 
+        try {
+            /* Récupération d'une connexion depuis la Factory */
+            connexion = daoFactory.getConnection();
+            /*
+             * Préparation de la requête avec les objets passés en arguments
+             * (ici, uniquement un id) et exécution.
+             */
+            preparedStatement = initialisationRequetePreparee( connexion, sql, false, objets );
+            resultSet = preparedStatement.executeQuery();
+            /* Parcours de la ligne de données retournée dans le ResultSet */
+            if ( resultSet.next() ) {
+                fournisseur = map( resultSet );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            fermeturesSilencieuses( resultSet, preparedStatement, connexion );
+        }
+
+        return fournisseur;
     }
     
      // Méthode pour modifier un fournisseur
@@ -140,5 +172,6 @@ public class FournisseurDAOImpl implements FournisseurDAO {
 
         return fournisseurs;
     }
+    
 }
 

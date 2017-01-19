@@ -31,13 +31,13 @@ public class CreationFournisseur extends HttpServlet {
     public static final String ATT_FORM         = "form";
     public static final String SESSION_FOURNISSEURS  = "fournisseurs";
 
-    public static final String VUE_SUCCES       = "/WEB-INF/afficherFournisseur.jsp";
-    public static final String VUE_FORM         = "/WEB-INF/creerFournisseur.jsp";
+    public static final String VUE_SUCCES = "/WEB-INF/afficherFournisseur.jsp";
+    public static final String VUE_FORM = "/WEB-INF/AjoutFournisseur.jsp";
 
     private FournisseurDAO          fournisseurDAO;
 
     public void init() throws ServletException {
-        /* Récupération d'une instance de notre DAO Utilisateur */
+        /* Récupération d'une instance de notre DAO Fournisseur */
         this.fournisseurDAO = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getFournisseurDAO();
     }
 
@@ -67,7 +67,7 @@ public class CreationFournisseur extends HttpServlet {
             out.println("</html>");
         }
     }
-
+	
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -81,7 +81,7 @@ public class CreationFournisseur extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        /* À la réception d'une requête GET, simple affichage du formulaire */
-        this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );
+     this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );    
     }
 
     /**

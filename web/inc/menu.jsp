@@ -10,8 +10,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/ToutBoisFournisseurs">Accueil <span class="sr-only">(current)</span></a></li>
-		<li><a href="GestionFournisseurs.jsp">Gestion Fournisseurs</a></li>
-		<li><a href="GestionCommandes.jsp">Gestion Commandes</a></li>
+        <li><a href="CreationFournisseur">Ajout Fournisseurs</a></li>
+		<li><a href="ListeFournisseurs">Liste Fournisseurs</a></li>
+		
 		
       </ul>
       <form class="navbar-form navbar-left">

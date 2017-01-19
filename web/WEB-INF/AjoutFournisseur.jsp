@@ -10,24 +10,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>ToutBois - Gestion des fournisseurs</title>
+        <title>ToutBois - Ajout de fournisseurs</title>
     </head>
     <body>
         <c:import url="/inc/header.jsp" />
         
-        <div>
-            <form method="post" action="<c:url value="/"/>">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-2">
+            <form method="post" action="<c:url value="/CreationFournisseur"/>">
                 <fieldset>
                     <legend>Informations Fournisseur</legend>
     
                    <c:import url="/inc/fournisseurform.jsp" />
                 </fieldset>
                 <p class="info">${ form.resultat }</p>
-                <input type="submit" class="btn btn-info" value="Valider"  />
-                <input type="reset" class="btn btn-info" value="Remettre à zéro" /> <br />
+                <div class="text-center">
+                    <input type="submit" class="btn btn-info" value="Valider"  />
+                    <input type="reset" class="btn btn-info" value="Remettre à zéro" />
+                </div>    <br />
             </form>
         </div>
-                
+        </div></div>        
         
         <c:import url="/inc/footer.jsp" />
     </body>
