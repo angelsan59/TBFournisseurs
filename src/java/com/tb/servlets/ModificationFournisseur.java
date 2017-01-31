@@ -6,14 +6,26 @@
 package com.tb.servlets;
 
 import com.tb.beans.Fournisseur;
+import com.tb.dao.DAOException;
 import com.tb.dao.DAOFactory;
 import com.tb.dao.FournisseurDAO;
 import com.tb.forms.CreationFournisseurForm;
+import com.tb.forms.ModificationFournisseurForm;
+import static com.tb.servlets.CreationFournisseur.ATT_FORM;
+import static com.tb.servlets.CreationFournisseur.ATT_FOURNISSEUR;
+import static com.tb.servlets.CreationFournisseur.CHEMIN;
+import static com.tb.servlets.CreationFournisseur.SESSION_FOURNISSEURS;
+import static com.tb.servlets.CreationFournisseur.VUE_FORM;
+import static com.tb.servlets.CreationFournisseur.VUE_SUCCES;
+import static com.tb.servlets.SuppressionFournisseur.PARAM_CODE_FOU;
+import static com.tb.servlets.SuppressionFournisseur.SESSION_FOURNISSEURS;
+import static com.tb.servlets.SuppressionFournisseur.VUE;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,16 +35,17 @@ import javax.servlet.http.HttpSession;
  *
  * @author sociepka
  */
-public class CreationFournisseur extends HttpServlet {
+@WebServlet(name = "ModificationFournisseur", urlPatterns = {"/ModificationFournisseur"})
+public class ModificationFournisseur extends HttpServlet {
     
     public static final String CONF_DAO_FACTORY = "daofactory";
     public static final String CHEMIN           = "chemin";
     public static final String ATT_FOURNISSEUR       = "fournisseur";
     public static final String ATT_FORM         = "form";
     public static final String SESSION_FOURNISSEURS  = "fournisseurs";
-
+    public static final String PARAM_CODE_FOU  = "code_fou";
     public static final String VUE_SUCCES = "/WEB-INF/afficherFournisseur.jsp";
-    public static final String VUE_FORM = "/WEB-INF/AjoutFournisseur.jsp";
+    public static final String VUE_FORM = "/WEB-INF/ModifieFournisseur.jsp";
 
     private FournisseurDAO          fournisseurDAO;
 
@@ -40,7 +53,7 @@ public class CreationFournisseur extends HttpServlet {
         /* Récupération d'une instance de notre DAO Fournisseur */
         this.fournisseurDAO = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getFournisseurDAO();
     }
-
+    
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -55,19 +68,23 @@ public class CreationFournisseur extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet CreationFournisseur</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet CreationFournisseur at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+          
+        
         }
     }
-	
+
+    /*
+     * Méthode utilitaire qui retourne null si un paramètre est vide, et son
+     * contenu sinon.
+     */
+    private static String getValeurParametre( HttpServletRequest request, String nomChamp ) {
+        String valeur = request.getParameter( nomChamp );
+        if ( valeur == null || valeur.trim().length() == 0 ) {
+            return null;
+        } else {
+            return valeur;
+        }
+        }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -80,10 +97,18 @@ public class CreationFournisseur extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       /* À la réception d'une requête GET, simple affichage du formulaire */
-     this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );    
-    }
+          String code_fou = getValeurParametre( request, PARAM_CODE_FOU );
+        Long id = Long.parseLong( code_fou );
 
+                Fournisseur fournisseur = fournisseurDAO.trouver( id );
+               
+        request.setAttribute( ATT_FOURNISSEUR, fournisseur );
+           String enseigne = fournisseur.getEnseigne() ;
+            
+            System.out.println("Enseigne : " + enseigne);
+             this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );
+  //  }
+    }
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -100,12 +125,12 @@ public class CreationFournisseur extends HttpServlet {
          * dans le web.xml
          */
         String chemin = this.getServletConfig().getInitParameter( CHEMIN );
-
+        
         /* Préparation de l'objet formulaire */
-        CreationFournisseurForm form = new CreationFournisseurForm( fournisseurDAO );
+        ModificationFournisseurForm form = new ModificationFournisseurForm( fournisseurDAO );
 
         /* Traitement de la requête et récupération du bean en résultant */
-        Fournisseur fournisseur = form.creerFournisseur( request, chemin );
+        Fournisseur fournisseur = form.modifierFournisseur( request, chemin );
 
         /* Ajout du bean et de l'objet métier à l'objet requête */
         request.setAttribute( ATT_FOURNISSEUR, fournisseur );
@@ -120,18 +145,28 @@ public class CreationFournisseur extends HttpServlet {
             if ( fournisseurs == null ) {
                 fournisseurs = new HashMap<Long, Fournisseur>();
             }
-            /* Puis ajout du fournisseur courant dans la map */
             fournisseurs.put( fournisseur.getCode_fou(), fournisseur );
+            
             /* Et enfin (ré)enregistrement de la map en session */
             session.setAttribute( SESSION_FOURNISSEURS, fournisseurs );
 
             /* Affichage de la fiche récapitulative */
+            System.out.println("vue succes peut etre");
             this.getServletContext().getRequestDispatcher( VUE_SUCCES ).forward( request, response );
         } else {
             /* Sinon, ré-affichage du formulaire de création avec les erreurs */
             this.getServletContext().getRequestDispatcher( VUE_FORM ).forward( request, response );
         }
     }
-    }
 
-  
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
+}

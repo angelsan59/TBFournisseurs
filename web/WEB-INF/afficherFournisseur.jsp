@@ -13,6 +13,11 @@
  
  <div class="container">
             <div class='row'>
+                <div class='col-md-8 col-sm-offset-2 succes'>
+                    Le nouveau fournisseur a été ajouté avec succès. Retrouvez ses détails ci-dessous :
+                </div>
+            </div>
+            <div class='row'>
                 <div class='col-md-8 col-sm-offset-2'>
                     
     <div class="panel panel-default">

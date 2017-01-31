@@ -25,6 +25,7 @@ font-family: 'Alfa Slab One', cursive;
 	 background-color:#ccc;
 	 box-shadow:2px 2px 5px #7eb2ba;
 	 margin-right:20px;
+         margin-top:20px;
 }
 
 p{padding-left:50px;}
@@ -76,6 +77,14 @@ form input.sansLabel {
     font-style: italic;
     color: #E8A22B;
     text-align:center;
+}
+
+.edit{
+    color:#005b96;
+}
+
+.delete{
+    color:#c00;
 }
 
 /* Blocs constituants -------------------------------------------------------------------------- */

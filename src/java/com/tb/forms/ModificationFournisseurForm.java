@@ -28,6 +28,7 @@ import javax.servlet.http.Part;
 
 
 public final class ModificationFournisseurForm {
+    private static final String CHAMP_CODE_FOU      = "code_fou";
     private static final String CHAMP_ENSEIGNE  = "enseigne";
     private static final String CHAMP_SIRET     = "siret";
     private static final String CHAMP_ADRESSE   = "adresse";
@@ -54,7 +55,9 @@ public final class ModificationFournisseurForm {
         return resultat;
     }
 
-    public Fournisseur creerFournisseur( HttpServletRequest request, String chemin ) {
+    public Fournisseur modifierFournisseur( HttpServletRequest request, String chemin ) {
+        String code_fou = getValeurChamp( request, CHAMP_CODE_FOU );
+        Long id = Long.parseLong( code_fou );
         String enseigne = getValeurChamp( request, CHAMP_ENSEIGNE );
         String siret = getValeurChamp( request, CHAMP_SIRET );
         String adresse = getValeurChamp( request, CHAMP_ADRESSE );
@@ -66,7 +69,7 @@ public final class ModificationFournisseurForm {
        
 
         Fournisseur fournisseur = new Fournisseur();
-
+fournisseur.setCode_fou( id );
         traiterEnseigne( enseigne, fournisseur );
         traiterSiret( siret, fournisseur );
         traiterAdresse( adresse, fournisseur );
@@ -75,23 +78,25 @@ public final class ModificationFournisseurForm {
         traiterVille( ville, fournisseur );
         traiterCp( cp, fournisseur );
         traiterPays( pays, fournisseur );
+       
 
         try {
             if ( erreurs.isEmpty() ) {
-                fournisseurDAO.creer( fournisseur );
-                resultat = "Succès de la création du fournisseur.";
+                fournisseurDAO.modifier( fournisseur );
+                resultat = "Succès de la modification du fournisseur.";
             } else {
-                resultat = "Échec de la création du fournisseur.";
+                resultat = "Échec de la modification du fournisseur.";
             }
         } catch ( DAOException e ) {
-            setErreur( "imprévu", "Erreur imprévue lors de la création." );
-            resultat = "Échec de la création du fournisseur : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
+            setErreur( "imprévu", "Erreur imprévue lors de la modification." );
+            resultat = "Échec de la modification du fournisseur : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
 
         return fournisseur;
     }
 
+   
     private void traiterEnseigne( String enseigne, Fournisseur fournisseur ) {
         try {
             validationEnseigne( enseigne );

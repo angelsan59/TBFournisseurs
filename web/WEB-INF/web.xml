@@ -19,6 +19,10 @@
         <servlet-name>SuppressionFournisseur</servlet-name>
         <servlet-class>com.tb.servlets.SuppressionFournisseur</servlet-class>
     </servlet>
+      <servlet>
+        <servlet-name>ModificationFournisseur</servlet-name>
+        <servlet-class>com.tb.servlets.ModificationFournisseur</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>ListeFournisseurs</servlet-name>
         <servlet-class>com.tb.servlets.ListeFournisseurs</servlet-class>
@@ -30,6 +34,10 @@
     <servlet-mapping>
         <servlet-name>SuppressionFournisseur</servlet-name>
         <url-pattern>/SuppressionFournisseur</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModificationFournisseur</servlet-name>
+        <url-pattern>/ModificationFournisseur</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListeFournisseurs</servlet-name>

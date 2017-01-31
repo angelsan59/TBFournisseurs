@@ -27,6 +27,7 @@ public class FournisseurDAOImpl implements FournisseurDAO {
     private static final String SQL_INSERT = "INSERT INTO fournisseur (enseigne,adresse,cp,ville,pays,email,telephone,siret) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     private static final String SQL_SELECT        = "SELECT * FROM fournisseur ORDER BY code_fou";
     private static final String SQL_DELETE_PAR_CODE_FOU = "DELETE FROM fournisseur WHERE code_fou = ?";
+    private static final String SQL_UPDATE_PAR_CODE_FOU = "UPDATE fournisseur SET enseigne=?, adresse=?, cp=?, ville=?, pays=?, email=?, telephone=?, siret=? WHERE code_fou = ?";
 
     // Mapping entre le bean Fournisseur et la table fournisseur
     private static Fournisseur map( ResultSet resultSet ) throws SQLException {
@@ -50,7 +51,7 @@ public class FournisseurDAOImpl implements FournisseurDAO {
 
     // Méthode pour trouver un fournisseur par code_fou 
     @Override
-    public Fournisseur trouver( long code_fou ) throws DAOException {
+    public Fournisseur trouver( Long code_fou ) throws DAOException {
         return trouver( SQL_SELECT_PAR_CODE_FOU, code_fou );
     }
     
@@ -123,8 +124,26 @@ public class FournisseurDAOImpl implements FournisseurDAO {
     
      // Méthode pour modifier un fournisseur
     @Override
-    public Fournisseur modifier( long code_fou ) throws DAOException {
-        return null;
+    public Fournisseur modifier( Fournisseur fournisseur ) throws DAOException {
+        Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        
+        try {
+            connexion = daoFactory.getConnection();
+            preparedStatement = initialisationRequetePreparee( connexion, SQL_UPDATE_PAR_CODE_FOU, true, fournisseur.getEnseigne(), fournisseur.getAdresse(), fournisseur.getCp(), 
+                fournisseur.getVille(), fournisseur.getPays(), fournisseur.getEmail(), 
+                fournisseur.getTelephone(), fournisseur.getSiret(), fournisseur.getCode_fou() );
+            System.out.println("le code est ici" + fournisseur.getCode_fou());
+            int statut = preparedStatement.executeUpdate();
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la modification du fournisseur, aucune ligne modifiée dans la table." );
+            } 
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            fermeturesSilencieuses( preparedStatement, connexion );
+        }
+        return fournisseur;
     }
    
      // Méthode pour supprimer un fournisseur

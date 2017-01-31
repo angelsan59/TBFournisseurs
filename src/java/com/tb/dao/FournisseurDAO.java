@@ -13,8 +13,8 @@ import java.util.List;
  */
 public interface FournisseurDAO {
     void creer(Fournisseur fournisseur) throws DAOException;
-    Fournisseur trouver(long code_fou) throws DAOException;
-    Fournisseur modifier(long code_fou) throws DAOException;
+    Fournisseur trouver(Long code_fou) throws DAOException;
+    Fournisseur modifier(Fournisseur fournisseur) throws DAOException;
     List<Fournisseur> lister() throws DAOException;
     void supprimer( Fournisseur fournisseur ) throws DAOException;
 }

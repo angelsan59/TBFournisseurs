@@ -55,14 +55,14 @@ public class SuppressionFournisseur extends HttpServlet {
         String code_fou = getValeurParametre( request, PARAM_CODE_FOU );
         Long id = Long.parseLong( code_fou );
 
-        /* Récupération de la Map des clients enregistrés en session */
+        /* Récupération de la Map des fournisseurs enregistrés en session */
         HttpSession session = request.getSession();
         Map<Long, Fournisseur> fournisseurs = (HashMap<Long, Fournisseur>) session.getAttribute( SESSION_FOURNISSEURS );
 
-        /* Si l'id du client et la Map des clients ne sont pas vides */
+        /* Si l'id du fournisseur et la Map des fournisseurs ne sont pas vides */
         if ( id != null && fournisseurs != null ) {
             try {
-                /* Alors suppression du client de la BDD */
+                /* Alors suppression du fournisseur de la BDD */
                 fournisseurDAO.supprimer( fournisseurs.get( id ) );
                 /* Puis suppression du client de la Map */
                 fournisseurs.remove( id );

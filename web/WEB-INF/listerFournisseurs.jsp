@@ -32,11 +32,11 @@
                             <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#<c:out value="${ mapFournisseurs.value.code_fou }"></c:out>">
-          <c:out value="${ mapFournisseurs.value.enseigne }"></c:out> 
-          <i class="fa fa-edit" style="font-size:24px"></i> 
+            <c:out value="${ mapFournisseurs.value.enseigne }"></c:out></a> 
+            <span style="text-align:right;"> <a href="<c:url value="/ModificationFournisseur"><c:param name="code_fou" value="${ mapFournisseurs.key }" ></c:param></c:url>"><i class="fa fa-edit" style="font-size:24px;color:blue;"></i></a> 
           <a href="<c:url value="/SuppressionFournisseur"><c:param name="code_fou" value="${ mapFournisseurs.key }" ></c:param></c:url>"  onclick="return confirm('Etes-vous sûr ?');">
-              <i class="fa fa-times-circle" style="font-size:24px"></i></a>
-        </a>
+              <i class="fa fa-times-circle" style="font-size:24px;color:red;"></i></a>
+                </a></span>
       </h4>
                             </div>
                             <div id="<c:out value="${ mapFournisseurs.value.code_fou }"></c:out>" class="panel-collapse collapse">
