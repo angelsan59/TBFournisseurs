@@ -6,6 +6,11 @@ body{
     
 }
 
+h3{
+    line-height:2em;
+    letter-spacing: 0.5px;
+    font-weight:bold;
+}
 .jumbotron{
 	padding-left:50px;
 	background-color: #e8e1d6;
@@ -30,6 +35,10 @@ font-family: 'Alfa Slab One', cursive;
 
 p{padding-left:50px;}
 
+.footer{
+    background-color: #f5f5f5;
+    margin-top:100px;
+}
 
 /* Forms --------------------------------------------------------------------------------------- */
 
@@ -60,6 +69,10 @@ form input.sansLabel {
     margin-left: 200px;
 }
 
+.label{
+    color:#000;
+}
+
 /* Styles et couleurs -------------------------------------------------------------------------- */
 .requis {
     color: #c00;
@@ -85,6 +98,10 @@ form input.sansLabel {
 
 .delete{
     color:#c00;
+}
+
+.alerte{
+  font-weight:bold;  
 }
 
 /* Blocs constituants -------------------------------------------------------------------------- */

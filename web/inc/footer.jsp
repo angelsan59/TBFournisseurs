@@ -1,6 +1,11 @@
-<footer>
+
+
+    <div class="footer">
+      <div class="container">
     <p>Copyright 2017 ToutBois Inc</p>
-</footer>
+</div>
+    </div>
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 

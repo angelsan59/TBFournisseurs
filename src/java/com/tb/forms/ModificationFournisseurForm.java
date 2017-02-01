@@ -8,19 +8,9 @@ package com.tb.forms;
 import com.tb.beans.Fournisseur;
 import com.tb.dao.DAOException;
 import com.tb.dao.FournisseurDAO;
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
 /**
  *
  * @author sociepka

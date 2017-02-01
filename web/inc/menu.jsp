@@ -9,18 +9,13 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/ToutBoisFournisseurs">Accueil <span class="sr-only">(current)</span></a></li>
-        <li><a href="CreationFournisseur">Ajout Fournisseurs</a></li>
-		<li><a href="ListeFournisseurs">Liste Fournisseurs</a></li>
-		
-		
+        <li class="active"><a href="http://localhost:88/ToutBoisFournisseurs/">Accueil <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://localhost:88/ToutBoisFournisseurs/CreationFournisseur">Nouveau fournisseur</a></li>
+	<li><a href="http://localhost:88/ToutBoisFournisseurs/ListeFournisseurs">Gestion des fournisseurs</a></li>
+        <li><a href="http://localhost:88/ToutBoisFournisseurs_lot2/CCommande.action">Nouvelle commande</a></li>
+	<li><a href="http://localhost:88/ToutBoisFournisseurs_lot2/gestionCommandes">Gestion des commandes</a></li>	
       </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="rechercher">
-        </div>
-        <button type="submit" class="btn btn-default">Ok</button>
-      </form>
+      
       
     </div>
   </div>

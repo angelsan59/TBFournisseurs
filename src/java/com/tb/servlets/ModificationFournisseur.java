@@ -6,20 +6,9 @@
 package com.tb.servlets;
 
 import com.tb.beans.Fournisseur;
-import com.tb.dao.DAOException;
 import com.tb.dao.DAOFactory;
 import com.tb.dao.FournisseurDAO;
-import com.tb.forms.CreationFournisseurForm;
 import com.tb.forms.ModificationFournisseurForm;
-import static com.tb.servlets.CreationFournisseur.ATT_FORM;
-import static com.tb.servlets.CreationFournisseur.ATT_FOURNISSEUR;
-import static com.tb.servlets.CreationFournisseur.CHEMIN;
-import static com.tb.servlets.CreationFournisseur.SESSION_FOURNISSEURS;
-import static com.tb.servlets.CreationFournisseur.VUE_FORM;
-import static com.tb.servlets.CreationFournisseur.VUE_SUCCES;
-import static com.tb.servlets.SuppressionFournisseur.PARAM_CODE_FOU;
-import static com.tb.servlets.SuppressionFournisseur.SESSION_FOURNISSEURS;
-import static com.tb.servlets.SuppressionFournisseur.VUE;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -44,7 +33,7 @@ public class ModificationFournisseur extends HttpServlet {
     public static final String ATT_FORM         = "form";
     public static final String SESSION_FOURNISSEURS  = "fournisseurs";
     public static final String PARAM_CODE_FOU  = "code_fou";
-    public static final String VUE_SUCCES = "/WEB-INF/afficherFournisseur.jsp";
+    public static final String VUE_SUCCES = "/WEB-INF/modFournisseur.jsp";
     public static final String VUE_FORM = "/WEB-INF/ModifieFournisseur.jsp";
 
     private FournisseurDAO          fournisseurDAO;

@@ -19,11 +19,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 <link rel="SHORTCUT ICON" href="favicon.ico">
+<style>
+    .footer{
+    background-color: #f5f5f5;
+    margin-top:100px;
+}
+</style>
     </head>
     <body>
-       
+    
         <c:import url="/inc/menu.jsp" />
-        
+      
          <div class="jumbotron">
 	<div class="container">
 <div class="row">
